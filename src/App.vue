@@ -1,21 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/login">Login</router-link>
-      |
-      <router-link to="/logout">Logout</router-link>
-      |
-      <router-link to="/signup">Signup</router-link>
-      |
-      <router-link to="/">Home</router-link>
-      |
-      <router-link to="/repertoires">Repertoires</router-link>
-      |
-      <router-link to="/upbeats">Upbeats</router-link>
-    </div>
-    <router-view />
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/login" v-if="!jwt">Login</a></li>
+          <li><a href="/logout">Logout</a></li>
+          <li><a href="/signup" v-if="!jwt">Signup</a></li>
+          <li><a href="/repertoires">Repertoires</a></li>
+          <li><a href="/upbeats">Upbeats</a></li>
+        </ul>
+      </div>
+    </nav>
+    <router-view v-on:changeJwt="setJwt()" />
   </div>
 </template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      jwt: null
+    };
+  },
+  created: function() {
+    this.setJwt();
+  },
+  methods: {
+    setJwt: function() {
+      this.jwt = localStorage.getItem("jwt");
+    }
+  }
+};
+</script>
 
 <style>
 #app {

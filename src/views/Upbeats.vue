@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>Upload an Upbeat</h1>
     <h1>All Upbeats</h1>
     <div v-for="upbeat in upbeats">
       <h2>{{ upbeat.title }}</h2>
@@ -28,4 +29,7 @@ export default {
   },
   methods: {}
 };
+const client = filestack.init("");
+client.picker().open();
 </script>
+
