@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h1>Upload an Upbeat</h1>
+    <button v-on:click="showFilePicker()">Upload</button>
     <h1>All Upbeats</h1>
     <div v-for="upbeat in upbeats">
       <h2>{{ upbeat.title }}</h2>
@@ -27,9 +28,12 @@ export default {
       console.log(this.upbeats);
     });
   },
-  methods: {}
-};
-const client = filestack.init("");
-client.picker().open();
-</script>
 
+  methods: {
+    showFilePicker: function() {
+      const client = filestack.init(process.env.VUE_APP_FILEPICKER);
+      client.picker().open();
+    }
+  }
+};
+</script>
