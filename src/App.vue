@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav>
+    <nav class="background black">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo right">Logo</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -41,7 +41,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
 }
 #nav {
   padding: 30px;
