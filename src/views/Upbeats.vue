@@ -1,15 +1,10 @@
 <template>
   <div class="container">
-    <h1>Upload an Upbeat</h1>
-    <button v-on:click="showFilePicker()">Upload</button>
-    <h1>All Upbeats</h1>
-    <div v-for="upbeat in upbeats">
-      <h2>{{ upbeat.title }}</h2>
-      <h3>{{ upbeat.artist }}</h3>
-      <h3>{{ upbeat.album }}</h3>
-      <p>{{ upbeat.genre }}</p>
-      <p>{{ upbeat.duration }}</p>
-      <p>{{ upbeat.repertoire_id }}</p>
+    <div class="button">
+      <a class="waves-effect waves-red btn-large black pulse" v-on:click="showFilePicker()">
+        <i class="material-icons right">speaker</i>
+        Upload
+      </a>
     </div>
   </div>
 </template>
@@ -37,3 +32,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.button {
+  margin: 50px;
+}
+
+.button:hover {
+}
+</style>
