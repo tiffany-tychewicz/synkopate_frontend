@@ -6,15 +6,19 @@
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
-        <div class="form-group">
-          <label>Email:</label>
+
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
           <input type="email" class="form-control" v-model="email" />
+          <label for="icon_prefix">E-mail</label>
         </div>
-        <div class="form-group">
-          <label>Password:</label>
+        <div class="input-field">
+          <i class="material-icons prefix">https</i>
           <input type="password" class="form-control" v-model="password" />
+          <label for="icon_password">Password</label>
         </div>
-        <input type="submit" class="btn btn-primary" value="Submit" />
+
+        <input type="submit" class="btn" value="Login" />
       </form>
     </div>
   </div>
@@ -53,3 +57,38 @@ export default {
   }
 };
 </script>
+
+<style>
+.input-field {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+/* label color */
+.input-field label {
+  color: #fff;
+}
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: #fff;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+/* valid color */
+.input-field input[type="text"].valid {
+  border-bottom: 1px solid #0c8;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid #f08;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+</style>
