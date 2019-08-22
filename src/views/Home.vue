@@ -87,7 +87,7 @@ body {
   position: fixed;
   flex-direction: column;
   margin-top: 75px;
-  margin-left: 10px;
+  margin-left: 40px;
   margin-right: 200px;
   margin-bottom: 50px;
   width: 200px;
@@ -101,7 +101,7 @@ body {
   position: fixed;
   flex-direction: column;
   margin-top: 75px;
-  margin-left: 1000px;
+  margin-left: 1616px;
   margin-bottom: 50px;
   width: 200px;
   padding: 40px 0 60px 0;
