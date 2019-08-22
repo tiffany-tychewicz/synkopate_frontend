@@ -2,33 +2,35 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <!-- <div class="circle circle1"></div> -->
-    <div class="speaker-box-left flex-center">
-      <div class="vent"></div>
-      <div class="speaker small flex-center circle1">
-        <div class="ring small flex-center">
-          <div class="interior small"></div>
+    <container>
+      <div class="speaker-box-left flex-center">
+        <div class="vent"></div>
+        <div class="speaker small flex-center circle1">
+          <div class="ring small flex-center">
+            <div class="interior small"></div>
+          </div>
+        </div>
+        <div class="speaker flex-center circle2">
+          <div class="ring flex-center">
+            <div class="interior"></div>
+          </div>
         </div>
       </div>
-      <div class="speaker flex-center circle2">
-        <div class="ring flex-center">
-          <div class="interior"></div>
-        </div>
-      </div>
-    </div>
 
-    <div class="speaker-box-right flex-center">
-      <div class="vent"></div>
-      <div class="speaker small flex-center circle1">
-        <div class="ring small flex-center">
-          <div class="interior small"></div>
+      <div class="speaker-box-right flex-center">
+        <div class="vent"></div>
+        <div class="speaker small flex-center circle1">
+          <div class="ring small flex-center">
+            <div class="interior small"></div>
+          </div>
+        </div>
+        <div class="speaker flex-center circle2">
+          <div class="ring flex-center">
+            <div class="interior"></div>
+          </div>
         </div>
       </div>
-      <div class="speaker flex-center circle2">
-        <div class="ring flex-center">
-          <div class="interior"></div>
-        </div>
-      </div>
-    </div>
+    </container>
     <div class="video-container">
       <iframe
         class="video"
@@ -43,8 +45,8 @@
 
 <style>
 .video {
-  max-width: 853px;
-  max-height: 480px;
+  max-width: /*853px*/ 60%;
+  max-height: /*480px*/ 60%;
   position: absolute;
   top: 0;
   right: 0;
@@ -57,16 +59,11 @@
   box-sizing: border-box;
 }
 
-/*html,
-body {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
   width: 100%;
   height: 100%;
-  background-color: #d9d9d9;
-}*/
+  position: relative;
+}
 
 .circle {
   width: 50px;
@@ -87,11 +84,11 @@ body {
   position: fixed;
   flex-direction: column;
   margin-top: 75px;
-  margin-left: 40px;
-  margin-right: 200px;
+  margin-left: 0.5%;
+  margin-right: 5%;
   margin-bottom: 50px;
   width: 200px;
-  padding: 40px 0 60px 0;
+  padding: 0% 0 60px 0;
   border-radius: 10px;
   border: 5px solid #000;
   background-color: #2c2c2c;
@@ -101,10 +98,10 @@ body {
   position: fixed;
   flex-direction: column;
   margin-top: 75px;
-  margin-left: 1616px;
+  margin-left: 84%;
   margin-bottom: 50px;
   width: 200px;
-  padding: 40px 0 60px 0;
+  padding: 0% 0 60px 0;
   border-radius: 10px;
   border: 5px solid #000;
   background-color: #2c2c2c;
@@ -216,10 +213,6 @@ body {
     transform: scale(1.1);
   }
 }
-/*
-.video-container {
-  text-align: center;
-}*/
 </style>
 
 <script>
