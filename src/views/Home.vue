@@ -1,10 +1,226 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+    <!-- <div class="circle circle1"></div> -->
+    <div class="speaker-box-left flex-center">
+      <div class="vent"></div>
+      <div class="speaker small flex-center circle1">
+        <div class="ring small flex-center">
+          <div class="interior small"></div>
+        </div>
+      </div>
+      <div class="speaker flex-center circle2">
+        <div class="ring flex-center">
+          <div class="interior"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="speaker-box-right flex-center">
+      <div class="vent"></div>
+      <div class="speaker small flex-center circle1">
+        <div class="ring small flex-center">
+          <div class="interior small"></div>
+        </div>
+      </div>
+      <div class="speaker flex-center circle2">
+        <div class="ring flex-center">
+          <div class="interior"></div>
+        </div>
+      </div>
+    </div>
+    <div class="video-container">
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/KMZ4kkSVrBw"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </template>
 
-<style></style>
+<style>
+.video {
+  max-width: 853px;
+  max-height: 480px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 100;
+  left: 0;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*html,
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9;
+}*/
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  border-right: 3px solid blue;
+  margin: 50px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-box-left {
+  position: fixed;
+  flex-direction: column;
+  margin-top: 75px;
+  margin-left: 10px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+  width: 200px;
+  padding: 40px 0 60px 0;
+  border-radius: 10px;
+  border: 5px solid #000;
+  background-color: #2c2c2c;
+}
+
+.speaker-box-right {
+  position: fixed;
+  flex-direction: column;
+  margin-top: 75px;
+  margin-left: 1000px;
+  margin-bottom: 50px;
+  width: 200px;
+  padding: 40px 0 60px 0;
+  border-radius: 10px;
+  border: 5px solid #000;
+  background-color: #2c2c2c;
+}
+
+.speaker {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  background-color: #b4b4b4;
+
+  &.small {
+    margin-bottom: 50px;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.ring {
+  width: 75px;
+  height: 75px;
+  background-color: #b4b4b4;
+  border-radius: 50%;
+  border: 5px solid #000;
+
+  &.small {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.interior {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #000;
+
+  &.small {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.vent {
+  margin-bottom: 40px;
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  border: 5px solid #000;
+  background-color: darken(#2c2c2c, 5%);
+}
+
+.circle1 {
+  animation: tweeder 1s infinite ease;
+}
+
+.circle2 {
+  animation: elastic 1s infinite ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes elastic {
+  0% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.7);
+  }
+  35% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes tweeder {
+  0% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  35% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/*
+.video-container {
+  text-align: center;
+}*/
+</style>
 
 <script>
 export default {

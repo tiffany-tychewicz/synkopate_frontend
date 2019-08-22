@@ -8,7 +8,7 @@
           <li><a href="/login" v-if="!jwt">Login</a></li>
           <li><a href="/logout" v-if="jwt">Logout</a></li>
           <li><a href="/signup" v-if="!jwt">Signup</a></li>
-          <li><a href="/repertoires" v-if="jwt">Repertoires</a></li>
+          <!-- <li><a href="/repertoires" v-if="jwt">Repertoires</a></li> -->
           <li><a href="/upbeats" v-if="jwt">Upbeats</a></li>
         </ul>
       </div>
@@ -37,7 +37,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

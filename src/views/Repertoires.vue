@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="container">
     <h1>All Repertoires</h1>
     <div v-for="repertoire in repertoires">
@@ -25,3 +25,4 @@ export default {
   methods: {}
 };
 </script>
+ -->

@@ -42,18 +42,25 @@ export default {
           const title = response.filesUploaded[0].filename;
           console.log("the url from the response is", url);
           console.log("the title from the response is", title);
-          // var params = {
-          //   title: title,
-          //   url: url,
-          // };
 
-          // axios
-          //   .post("/api/upbeats", params)
-          //   .then(response => {
-          //     console.log("Success", response.data);
-          //     this.$router.push("/");
-          //   })
-          //   .catch(error => console.log(error.response));
+          // axios.post({
+          //   url: "localhost:3000/api/upbeats",
+          //   data: title,
+          //   url
+          // });
+
+          var params = {
+            title: title,
+            url: url
+          };
+
+          axios
+            .post("/api/upbeats", params)
+            .then(response => {
+              console.log("Success", response.data);
+              this.$router.push("/");
+            })
+            .catch(error => console.log(error.response));
         }
       };
 
