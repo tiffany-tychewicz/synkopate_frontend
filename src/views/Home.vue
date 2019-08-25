@@ -54,7 +54,9 @@
         allowfullscreen
       ></iframe>
       <div class="button">
-        <a class="waves-effect waves-white btn-large pulse red">LEARN TO TORRENT</a>
+        <a class="waves-effect waves-white btn-large pulse red" v-on:click="newTab">
+          LEARN TO TORRENT
+        </a>
       </div>
     </div>
   </div>
@@ -244,6 +246,10 @@ export default {
     };
   },
   created: function() {},
-  methods: {}
+  methods: {
+    newTab: function() {
+      window.open("https://www.wikihow.com/Download-Torrents");
+    }
+  }
 };
 </script>

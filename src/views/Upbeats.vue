@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="button">
+      <div class="upload-button">
         <a class="waves-effect waves-red btn-large black pulse" v-on:click="showFilePicker()">
           <i class="material-icons right">speaker</i>
           Upload
@@ -9,12 +9,12 @@
       </div>
     </div>
     <div v-for="upbeat in upbeats">
-      <div>
-        {{ upbeat.title }}
+      <div class="title">
+        <h3>{{ upbeat.title }}</h3>
       </div>
       <div>
         <div class="button">
-          <a class="waves-effect waves-white btn red" :href="upbeat.url">PLAY/ DOWNLOAD</a>
+          <a class="waves-effect waves-white btn red" v-bind:href="upbeat.url" target="_blank">PLAY/ DOWNLOAD</a>
         </div>
       </div>
     </div>
@@ -37,6 +37,10 @@ export default {
   },
 
   methods: {
+    newTab: function() {
+      window.open(this.url);
+    },
+
     showFilePicker: function() {
       const client = filestack.init(process.env.VUE_APP_FILEPICKER);
 
@@ -83,8 +87,17 @@ export default {
 </script>
 
 <style>
+h3 {
+  margin: 0px;
+}
+.upload-button {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .button {
-  margin: 50px;
+  margin: 25px;
+  padding-top: 0px;
 }
 
 .button:hover {
