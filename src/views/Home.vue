@@ -1,8 +1,22 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
+    <P>
+      "The BPI’s real problem with file-sharing is the uncomfortable fact that free advertising threatens to let artists
+      make it big without signing on the dotted line. This is why the BPI says absurd things like “copying is stealing”.
+      Every child in primary school can tell the difference between looking over someone’s shoulder for answers and
+      ripping the piece of paper out of their hands. The law is clear on the difference, too: “A person is guilty of
+      theft, if he dishonestly appropriates property belonging to another with the intention of permanently depriving
+      the other of it.” Sharing doesn’t deprive anyone of property, so it obviously isn’t theft. The Government is
+      threatening to cut off or throttle the internet connections of whole families because one person in that family is
+      accused of giving an artist free advertising, but there’s no proposed increase in the “mild slap on the wrist”
+      penalty for buying counterfeit CDs. How does encouraging people to buy from counterfeiters help artists? Is this
+      morally right, or is the Government just doing whatever the industry tells it?"
+    </P>
+
+    <p>~ Andrew Robinson, leader of the Pirate Party UK</p>
     <!-- <div class="circle circle1"></div> -->
-    <container>
+    <div class="container">
       <div class="speaker-box-left flex-center">
         <div class="vent"></div>
         <div class="speaker small flex-center circle1">
@@ -30,7 +44,7 @@
           </div>
         </div>
       </div>
-    </container>
+    </div>
     <div class="video-container">
       <iframe
         class="video"
@@ -39,11 +53,18 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      <div class="button">
+        <a class="waves-effect waves-white btn-large pulse red">LEARN TO TORRENT</a>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
+.button {
+  position: relative;
+  padding-top: 35%;
+}
 .video {
   max-width: /*853px*/ 60%;
   max-height: /*480px*/ 60%;
@@ -81,7 +102,7 @@
 }
 
 .speaker-box-left {
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   margin-top: 75px;
   margin-left: 0.5%;
@@ -95,7 +116,7 @@
 }
 
 .speaker-box-right {
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   margin-top: 75px;
   margin-left: 84%;
@@ -219,7 +240,7 @@
 export default {
   data: function() {
     return {
-      message: "Welcome to Synkopate!"
+      message: "STEAL THIS APP."
     };
   },
   created: function() {},

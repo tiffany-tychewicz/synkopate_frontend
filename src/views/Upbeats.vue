@@ -1,10 +1,22 @@
 <template>
-  <div class="container">
-    <div class="button">
-      <a class="waves-effect waves-red btn-large black pulse" v-on:click="showFilePicker()">
-        <i class="material-icons right">speaker</i>
-        Upload
-      </a>
+  <div>
+    <div class="container">
+      <div class="button">
+        <a class="waves-effect waves-red btn-large black pulse" v-on:click="showFilePicker()">
+          <i class="material-icons right">speaker</i>
+          Upload
+        </a>
+      </div>
+    </div>
+    <div v-for="upbeat in upbeats">
+      <div>
+        {{ upbeat.title }}
+      </div>
+      <div>
+        <div class="button">
+          <a class="waves-effect waves-white btn red" :href="upbeat.url">PLAY/ DOWNLOAD</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
