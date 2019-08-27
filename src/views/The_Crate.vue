@@ -2,7 +2,12 @@
   <div class="the_crate">
     <h1>THE CRATE</h1>
     <div v-for="upbeat in upbeats">
-      {{ upbeat.title }}
+      <div>
+        {{ upbeat.title }}
+      </div>
+      <div>
+        <a class="waves-effect waves-white btn red" v-bind:href="upbeat.url" target="_blank">PLAY/ DOWNLOAD</a>
+      </div>
     </div>
   </div>
 </template>
