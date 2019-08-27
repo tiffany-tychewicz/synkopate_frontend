@@ -10,6 +10,7 @@
           <li><a href="/signup" v-if="!jwt">Signup</a></li>
           <!-- <li><a href="/repertoires" v-if="jwt">Repertoires</a></li> -->
           <li><a href="/upbeats" v-if="jwt">Upbeats</a></li>
+          <li><a href="/the_crate" v-if="jwt">THE CRATE</a></li>
         </ul>
       </div>
     </nav>

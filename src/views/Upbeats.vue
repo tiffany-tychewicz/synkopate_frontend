@@ -13,7 +13,7 @@
         <h3>{{ upbeat.title }}</h3>
       </div>
       <div>
-        <div class="button">
+        <div>
           <a class="waves-effect waves-white btn red" v-bind:href="upbeat.url" target="_blank">PLAY/ DOWNLOAD</a>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default {
 
 <style>
 h3 {
-  margin: 0px;
+  margin: 10px;
 }
 .upload-button {
   margin-top: 100px;
@@ -98,8 +98,5 @@ h3 {
 .button {
   margin: 25px;
   padding-top: 0px;
-}
-
-.button:hover {
 }
 </style>

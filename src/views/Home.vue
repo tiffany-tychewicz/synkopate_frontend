@@ -64,8 +64,11 @@
 
 <style>
 .button {
-  position: relative;
-  padding-top: 35%;
+  position: absolute;
+  /*padding-top: 70%;*/
+  margin-bottom: 70%;
+  top: 65%;
+  left: 40%;
 }
 .video {
   max-width: /*853px*/ 60%;
