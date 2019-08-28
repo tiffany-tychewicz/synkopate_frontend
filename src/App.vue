@@ -11,6 +11,7 @@
           <!-- <li><a href="/repertoires" v-if="jwt">Repertoires</a></li> -->
           <li><a href="/upbeats" v-if="jwt">Upbeats</a></li>
           <li><a href="/the_crate" v-if="jwt">THE CRATE</a></li>
+          <li><a href="/player" v-if="jwt">Player</a></li>
         </ul>
       </div>
     </nav>

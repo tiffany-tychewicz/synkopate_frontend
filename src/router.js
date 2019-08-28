@@ -6,6 +6,7 @@ import Signup from "./views/Signup.vue";
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import The_Crate from "./views/The_Crate.vue";
+import Player from "./views/Player.vue";
 
 Vue.use(Router);
 
@@ -43,6 +44,11 @@ export default new Router({
       path: "/the_crate",
       name: "The Crate",
       component: The_Crate
+    },
+    {
+      path: "/player",
+      name: "Player",
+      component: Player
     }
   ]
 });
