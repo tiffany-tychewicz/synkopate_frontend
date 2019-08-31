@@ -42,8 +42,74 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
+  data: function() {
+    return {
+      upbeats: {}
+    };
+  },
+  created: function() {
+  //   axios.get("/api/upbeats?all=true").then(songData = [
+  //   {
+  //     title: upbeat.title,
+  //     file: upbeat.url,
+  //     howl: null,
+  //   }
+  // ],
+
+  //   this.setupPlayer(songData)
+  //   )},
+    axios.get("/api/upbeats?all=true").then(response => {
+      this.upbeats = response.data.message;
+      console.log(this.upbeats);
+      var songData = [];
+
+      this.upbeats.forEach(function(upbeat) {
+      songData.push({title: upbeat.title, file: upbeat.url, howl: null})
+      console.log(upbeat);
+      });
+
+
+
+      // loop through this.upbeats
+      // inside the loop, push stuff into songData
+
+
+      this.setupPlayer(songData);
+    });
+  },
   mounted: function() {
+    // var songData = [
+    //   {
+    //     title: "Rave Digger",
+    //     file: "rave_digger",
+    //     howl: null
+    //   },
+    //   {
+    //     title: "80s Vibe",
+    //     file: "80s_vibe",
+    //     howl: null
+    //   },
+    //   {
+    //     title: "Test",
+    //     file: "https://cdn.filestackcontent.com/H079s4v7RxeftRNf1Klj",
+    //     howl: null
+    //   }
+    // ]
+    // this.setupPlayer(songData);
+
+    // make a web request to your backend to get all upbeats
+    // in the .then function, make an array songData (as seen above)
+    //                        songData = []
+    //                        loop through all your upbeats
+    //                        songData.push({title: ..., file: ..., howl: null})
+    //                        call this.setupPlayer(songData)
+
+  },
+  methods: {
+    setupPlayer: function(songData) {
+
     /*!
      *  Howler.js Audio Player Demo
      *  howlerjs.com
@@ -120,8 +186,13 @@ export default {
         if (data.howl) {
           sound = data.howl;
         } else {
+          var format = [];
+          if (data.file.startsWith('http')) {
+            format.push("mp3");
+          }
           sound = data.howl = new Howl({
-            src: ["./audio/" + data.file + ".webm", "./audio/" + data.file + ".mp3"],
+            src: [data.file, "./audio/" + data.file + ".webm", "./audio/" + data.file + ".mp3"],
+            format: format,
             html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
             onplay: function() {
               // Display the duration.
@@ -342,23 +413,7 @@ export default {
     };
 
     // Setup our new audio player class and pass it the playlist.
-    var player = new Player([
-      {
-        title: "Rave Digger",
-        file: "rave_digger",
-        howl: null
-      },
-      {
-        title: "80s Vibe",
-        file: "80s_vibe",
-        howl: null
-      },
-      {
-        title: "Running Out",
-        file: "running_out",
-        howl: null
-      }
-    ]);
+    var player = new Player(songData);
 
     // Bind our player controls.
     playBtn.addEventListener("click", function() {
@@ -457,6 +512,7 @@ export default {
     };
     window.addEventListener("resize", resize);
     resize();
+    }
   }
 };
 </script>
