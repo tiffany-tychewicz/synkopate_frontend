@@ -1,12 +1,15 @@
 <template>
   <div class="the_crate">
     <h1>THE CRATE</h1>
+    <input v-model="searchFilter" type="text" list="titles" />
     <div v-for="upbeat in upbeats">
       <div>
-        {{ upbeat.title }}
+        <h3>{{ upbeat.title }}</h3>
       </div>
       <div>
-        <a class="waves-effect waves-white btn red" v-bind:href="upbeat.url" target="_blank">PLAY/ DOWNLOAD</a>
+        <a class="waves-effect waves-white btn indigo accent-1" v-bind:href="upbeat.url" target="_blank">
+          PLAY/ DOWNLOAD
+        </a>
       </div>
     </div>
   </div>

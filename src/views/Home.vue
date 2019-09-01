@@ -245,7 +245,7 @@
 export default {
   data: function() {
     return {
-      message: "STEAL THIS APP."
+      message: "STEAL THIS APP"
     };
   },
   created: function() {},

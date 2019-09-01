@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="upload-button">
-        <a class="waves-effect waves-red btn-large black pulse" v-on:click="showFilePicker()">
+        <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
           <i class="material-icons right">speaker</i>
           Upload
         </a>
@@ -14,7 +14,9 @@
       </div>
       <div>
         <div>
-          <a class="waves-effect waves-white btn red" v-bind:href="upbeat.url" target="_blank">PLAY/ DOWNLOAD</a>
+          <a class="waves-effect waves-white btn indigo accent-1" v-bind:href="upbeat.url" target="_blank">
+            PLAY/ DOWNLOAD
+          </a>
         </div>
       </div>
     </div>
