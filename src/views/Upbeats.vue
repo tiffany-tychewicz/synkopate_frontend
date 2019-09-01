@@ -61,7 +61,8 @@ export default {
             .post("/api/upbeats", params)
             .then(response => {
               console.log("Success", response.data);
-              this.$router.push("/");
+              this.$router.push("/upbeats");
+              location.reload(true);
             })
             .catch(error => console.log(error.response));
         }

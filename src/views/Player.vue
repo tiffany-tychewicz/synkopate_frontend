@@ -555,7 +555,7 @@ body {
   font-size: 34px;
   opacity: 0.9;
   font-weight: 300;
-  color: #fff;
+  color: #8c9eff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #timer {
@@ -566,7 +566,7 @@ body {
   font-size: 26px;
   opacity: 0.9;
   font-weight: 300;
-  color: #fff;
+  color: #8c9eff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #duration {
@@ -577,7 +577,7 @@ body {
   font-size: 26px;
   opacity: 0.5;
   font-weight: 300;
-  color: #fff;
+  color: #8c9eff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 
@@ -678,7 +678,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #8c9eff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
   opacity: 0.9;
 }
@@ -688,7 +688,7 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #8c9eff;
   z-index: -1;
 }
 
@@ -700,7 +700,7 @@ body {
   margin: -35px;
   width: 70px;
   height: 70px;
-  background-color: #fff;
+  background-color: #8c9eff;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1s infinite ease-in-out;
   animation: sk-scaleout 1s infinite ease-in-out;
@@ -734,7 +734,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #8c9eff;
   display: none;
 }
 #list {
@@ -764,11 +764,11 @@ body {
   line-height: 120px;
   text-align: center;
   font-weight: bold;
-  color: #fff;
+  color: #8c9eff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 .list-song:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #e8eaf6;
   cursor: pointer;
 }
 
@@ -779,10 +779,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #8c9eff;
   touch-action: none;
   -webkit-user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: #000000;
   display: none;
 }
 .bar {
@@ -791,7 +791,7 @@ body {
   left: 5%;
   margin: -5px auto;
   height: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #barEmpty {
@@ -810,7 +810,7 @@ body {
   top: 50%;
   left: 93.25%;
   margin: -25px auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #e8eaf6;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.33);
   border-radius: 25px;
   cursor: pointer;
