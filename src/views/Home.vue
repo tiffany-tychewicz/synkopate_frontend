@@ -54,7 +54,7 @@
         allowfullscreen
       ></iframe>
       <div class="button">
-        <a class="waves-effect waves-white btn-large pulse red" v-on:click="newTab">
+        <a class="waves-effect waves-white btn-large pulse indigo accent-1" v-on:click="newTab">
           LEARN TO TORRENT
         </a>
       </div>

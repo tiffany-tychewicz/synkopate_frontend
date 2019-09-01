@@ -6,7 +6,6 @@
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
-
         <div class="input-field">
           <i class="material-icons prefix">email</i>
           <input type="email" class="form-control" v-model="email" />
@@ -18,7 +17,7 @@
           <label for="icon_password">Password</label>
         </div>
 
-        <input type="submit" class="btn" value="Login" />
+        <input type="submit" class="white-text btn indigo accent-1" value="Login" />
       </form>
     </div>
   </div>
@@ -46,6 +45,7 @@ export default {
         .then(response => {
           axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
+          this.$emit("changeJwt");
           this.$router.push("/home");
         })
         .catch(error => {
@@ -66,7 +66,7 @@ export default {
 
 /* label color */
 .input-field label {
-  color: #fff;
+  color: #000000;
 }
 /* label focus color */
 .input-field input[type="text"]:focus + label {
@@ -74,8 +74,8 @@ export default {
 }
 /* label underline focus color */
 .input-field input[type="text"]:focus {
-  border-bottom: 1px solid #fff;
-  box-shadow: 0 1px 0 0 #fff;
+  border-bottom: 1px solid #000000 !important;
+  box-shadow: 0 1px 0 0 #000000 !important;
 }
 /* valid color */
 .input-field input[type="text"].valid {
@@ -87,8 +87,17 @@ export default {
   border-bottom: 1px solid #f08;
   box-shadow: 0 1px 0 0 #000;
 }
+
 /* icon prefix focus color */
 .input-field .prefix.active {
-  color: #000;
+  color: #8c9eff;
+}
+
+.active + input {
+  border-bottom: 1px solid #8c9eff !important;
+}
+
+label.active {
+  color: #8c9eff !important;
 }
 </style>

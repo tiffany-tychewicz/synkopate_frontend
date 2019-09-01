@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="background black">
+    <nav class="background indigo accent-1">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo right">Synkopate</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
@@ -43,7 +43,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 #nav {
   padding: 30px;
