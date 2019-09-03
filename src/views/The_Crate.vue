@@ -2,7 +2,10 @@
   <div class="the_crate">
     <h1>THE CRATE</h1>
     <input v-model="searchFilter" type="text" list="titles" />
-    <div v-for="upbeat in upbeats">
+    <datalist id="titles">
+      <option v-for="upbeat in upbeats">{{ upbeat.title }}</option>
+    </datalist>
+    <div v-for="upbeat in filterBy(upbeats, searchFilter, 'title')">
       <div>
         <h3>{{ upbeat.title }}</h3>
       </div>
@@ -17,10 +20,14 @@
 
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
 export default {
+  mixins: [Vue2Filters.mixin],
   data: function() {
     return {
-      upbeats: {}
+      upbeats: {},
+      searchFilter: "",
+      sortAttribute: "title"
     };
   },
 
