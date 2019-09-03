@@ -555,7 +555,7 @@ body {
   font-size: 34px;
   opacity: 0.9;
   font-weight: 300;
-  color: #8c9eff;
+  color: #ea80fc;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #timer {
@@ -566,7 +566,7 @@ body {
   font-size: 26px;
   opacity: 0.9;
   font-weight: 300;
-  color: #8c9eff;
+  color: #ea80fc;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #duration {
@@ -577,7 +577,7 @@ body {
   font-size: 26px;
   opacity: 0.5;
   font-weight: 300;
-  color: #8c9eff;
+  color: #ea80fc;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 
@@ -678,7 +678,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #8c9eff;
+  background-color: #ea80fc;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
   opacity: 0.9;
 }
@@ -688,7 +688,8 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #8c9eff;
+  background-color: #c5cae9;
+  opacity: 0.3;
   z-index: -1;
 }
 
@@ -700,7 +701,7 @@ body {
   margin: -35px;
   width: 70px;
   height: 70px;
-  background-color: #8c9eff;
+  background-color: #ea80fc;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1s infinite ease-in-out;
   animation: sk-scaleout 1s infinite ease-in-out;
@@ -734,7 +735,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #8c9eff;
+  background-color: #ea80fc;
   display: none;
 }
 #list {
@@ -779,7 +780,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #8c9eff;
+  background-color: #ba68c8;
   touch-action: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: #000000;
@@ -791,7 +792,7 @@ body {
   left: 5%;
   margin: -5px auto;
   height: 10px;
-  background-color: #ffffff;
+  background-color: #ba68c8;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #barEmpty {
@@ -810,7 +811,7 @@ body {
   top: 50%;
   left: 93.25%;
   margin: -25px auto;
-  background-color: #e8eaf6;
+  background-color: #ba68c8;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.33);
   border-radius: 25px;
   cursor: pointer;
