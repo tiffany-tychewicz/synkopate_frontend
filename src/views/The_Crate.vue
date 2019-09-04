@@ -1,5 +1,11 @@
 <template>
   <div class="the_crate">
+    <div class="upload-button">
+      <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
+        <i class="material-icons right">speaker</i>
+        Upload
+      </a>
+    </div>
     <h1>THE CRATE</h1>
     <input v-model="searchFilter" type="text" list="titles" />
     <datalist id="titles">

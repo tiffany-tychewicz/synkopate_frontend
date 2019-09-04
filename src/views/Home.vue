@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
-    <P>
+    <P style="color: #ffffff">
       "The BPI’s real problem with file-sharing is the uncomfortable fact that free advertising threatens to let artists
       make it big without signing on the dotted line. This is why the BPI says absurd things like “copying is stealing”.
       Every child in primary school can tell the difference between looking over someone’s shoulder for answers and
@@ -14,7 +13,7 @@
       morally right, or is the Government just doing whatever the industry tells it?"
     </P>
 
-    <p>~ Andrew Robinson, leader of the Pirate Party UK</p>
+    <p style="color: #ffffff">~ Andrew Robinson, leader of the Pirate Party UK</p>
     <!-- <div class="circle circle1"></div> -->
     <div class="container">
       <div class="speaker-box-left flex-center">

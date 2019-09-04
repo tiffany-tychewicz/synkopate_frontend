@@ -2,7 +2,7 @@
   <div class="login">
     <div class="container">
       <form v-on:submit.prevent="submit()">
-        <h1>Login</h1>
+        <h1 style="color: white">Login</h1>
         <ul>
           <li class="text-danger" v-for="error in errors">{{ error }}</li>
         </ul>
@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style>
+i.material-icons {
+  color: #ffffff !important;
+}
 .input-field {
   margin-left: 250px;
   margin-right: 250px;
@@ -66,16 +69,16 @@ export default {
 
 /* label color */
 .input-field label {
-  color: #000000;
+  color: #ffffff;
 }
 /* label focus color */
 .input-field input[type="text"]:focus + label {
-  color: #fff;
+  color: #ffffff;
 }
 /* label underline focus color */
 .input-field input[type="text"]:focus {
-  border-bottom: 1px solid #000000 !important;
-  box-shadow: 0 1px 0 0 #000000 !important;
+  border-bottom: 1px solid #ffffff !important;
+  box-shadow: 0 1px 0 0 #ffffff !important;
 }
 /* valid color */
 .input-field input[type="text"].valid {

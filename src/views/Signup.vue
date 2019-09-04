@@ -22,7 +22,7 @@
           <label>Password confirmation:</label>
           <input type="password" class="form-control" v-model="passwordConfirmation" />
         </div>
-        <input type="submit" class="btn btn-primary" value="Submit" />
+        <input type="submit" class="white-text btn indigo accent-1" value="submit" />
       </form>
     </div>
   </div>
@@ -61,3 +61,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.signup {
+  color: #ffffff;
+}
+</style>

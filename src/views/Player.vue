@@ -555,7 +555,7 @@ body {
   font-size: 34px;
   opacity: 0.9;
   font-weight: 300;
-  color: #ea80fc;
+  color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #timer {
@@ -566,7 +566,7 @@ body {
   font-size: 26px;
   opacity: 0.9;
   font-weight: 300;
-  color: #ea80fc;
+  color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 #duration {
@@ -577,7 +577,7 @@ body {
   font-size: 26px;
   opacity: 0.5;
   font-weight: 300;
-  color: #ea80fc;
+  color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
 }
 
@@ -690,7 +690,7 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #c5cae9;
+  background-color: #9fa8da;
   opacity: 0.3;
   z-index: -1;
 }
@@ -782,7 +782,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ba68c8;
+  background-color: #c5cae9;
+  opacity: 0.7;
   touch-action: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: #000000;

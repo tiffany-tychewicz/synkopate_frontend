@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="container">
+    
       <div class="upload-button">
         <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
           <i class="material-icons right">speaker</i>
           Upload
         </a>
       </div>
-    </div>
+    
     <input v-model="searchFilter" type="text" list="titles" />
     <datalist id="titles">
       <option v-for="upbeat in upbeats">{{ upbeat.title }}</option>
@@ -92,6 +92,12 @@ h3 {
 .upload-button {
   margin-top: 100px;
   margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  text-align: right;
+  padding-right: 30px;
+  
+
 }
 
 .button {

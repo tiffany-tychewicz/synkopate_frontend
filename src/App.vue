@@ -1,15 +1,21 @@
+<!-- Upbeats now referred to as "Uploads" -->
+
 <template>
   <div id="app">
     <nav class="background indigo accent-1">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo right">Synkopate</a>
+        <a class="brand-logo right" style="padding-right: 70px">
+          Valefor
+        </a>
+        <a>
+          <img src="https://i.imgur.com/gNRaf7C.png" class="brand-logo right" style="padding-right: 5px" />
+        </a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="/home">Home</a></li>
           <li><a href="/login" v-if="!jwt">Login</a></li>
           <li><a href="/logout" v-if="jwt">Logout</a></li>
           <li><a href="/signup" v-if="!jwt">Signup</a></li>
-          <!-- <li><a href="/repertoires" v-if="jwt">Repertoires</a></li> -->
-          <li><a href="/upbeats" v-if="jwt">Upbeats</a></li>
+          <li><a href="/upbeats" v-if="jwt">Uploads</a></li>
           <li><a href="/the_crate" v-if="jwt">THE CRATE</a></li>
           <li><a href="/player" v-if="jwt">Player</a></li>
         </ul>
