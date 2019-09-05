@@ -1,12 +1,15 @@
 <template>
   <div class="the_crate">
+    <div class="header_img">
+      <img src="https://i.imgur.com/nHur9h9.jpg" />
+    </div>
+    <h1>Search</h1>
     <div class="upload-button">
       <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
         <i class="material-icons right">speaker</i>
         Upload
       </a>
     </div>
-    <h1>THE CRATE</h1>
     <input v-model="searchFilter" type="text" list="titles" />
     <datalist id="titles">
       <option v-for="upbeat in upbeats">{{ upbeat.title }}</option>
@@ -25,6 +28,19 @@
 </template>
 
 <style>
+h3 {
+  color: #ffffff;
+}
+h1 {
+  position: relative;
+  right: 500px;
+  top: 130px;
+  color: #ffffff;
+}
+.upload-button {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
 .the_crate {
   padding-bottom: 100px;
 }
