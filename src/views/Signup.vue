@@ -65,5 +65,6 @@ export default {
 <style>
 .signup {
   color: #ffffff;
+  padding-bottom: 100px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="uploads">
     
       <div class="upload-button">
         <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
@@ -86,6 +86,9 @@ export default {
 </script>
 
 <style>
+.uploads {
+  padding-bottom: 100px;
+}
 h3 {
   margin: 10px;
 }

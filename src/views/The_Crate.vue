@@ -24,6 +24,12 @@
   </div>
 </template>
 
+<style>
+.the_crate {
+  padding-bottom: 100px;
+}
+</style>
+
 <script>
 import axios from "axios";
 import Vue2Filters from "vue2-filters";

@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style>
+.login {
+  padding-bottom: 100px;
+}
 i.material-icons {
   color: #ffffff !important;
 }

@@ -1,83 +1,86 @@
 <template>
   <div class="home">
-    <P style="color: #ffffff">
-      "The BPI’s real problem with file-sharing is the uncomfortable fact that free advertising threatens to let artists
-      make it big without signing on the dotted line. This is why the BPI says absurd things like “copying is stealing”.
-      Every child in primary school can tell the difference between looking over someone’s shoulder for answers and
-      ripping the piece of paper out of their hands. The law is clear on the difference, too: “A person is guilty of
-      theft, if he dishonestly appropriates property belonging to another with the intention of permanently depriving
-      the other of it.” Sharing doesn’t deprive anyone of property, so it obviously isn’t theft. The Government is
-      threatening to cut off or throttle the internet connections of whole families because one person in that family is
-      accused of giving an artist free advertising, but there’s no proposed increase in the “mild slap on the wrist”
-      penalty for buying counterfeit CDs. How does encouraging people to buy from counterfeiters help artists? Is this
-      morally right, or is the Government just doing whatever the industry tells it?"
-    </P>
-
-    <p style="color: #ffffff">~ Andrew Robinson, leader of the Pirate Party UK</p>
-    <!-- <div class="circle circle1"></div> -->
-    <div class="container">
-      <div class="speaker-box-left flex-center">
-        <div class="vent"></div>
-        <div class="speaker small flex-center circle1">
-          <div class="ring small flex-center">
-            <div class="interior small"></div>
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card medium">
+          <div class="card-image">
+            <img src="https://ksassets.timeincuk.net/wp/uploads/sites/54/2006/02/2440-1105-1-320x228.jpg" />
+            <span class="card-title">Share</span>
           </div>
-        </div>
-        <div class="speaker flex-center circle2">
-          <div class="ring flex-center">
-            <div class="interior"></div>
+          <div class="card-content">
+            <p>
+              Valefor is a platform intended for artists and music listeners who own mp3 files that want to share their
+              music with the world.
+            </p>
           </div>
         </div>
       </div>
-
-      <div class="speaker-box-right flex-center">
-        <div class="vent"></div>
-        <div class="speaker small flex-center circle1">
-          <div class="ring small flex-center">
-            <div class="interior small"></div>
+      <div class="col s12 m3">
+        <div class="card medium">
+          <div class="card-image">
+            <img
+              src="https://segd.org/sites/default/files/styles/galleryformatter_slide/public/HIPLA_HyundaiCard_MusicLibrary%2BUnderstage_33_MusicLibrary_150525.jpg?itok=xclwspvv"
+              style="height: 141px"
+            />
+            <span class="card-title">Build</span>
           </div>
-        </div>
-        <div class="speaker flex-center circle2">
-          <div class="ring flex-center">
-            <div class="interior"></div>
+          <div class="card-content">
+            <p>
+              The goal of Valefor is to build a collective music library and archive in order to preserve digital music
+              that will inevitably get lost to time.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="video-container">
-      <iframe
-        class="video"
-        src="https://www.youtube.com/embed/KMZ4kkSVrBw"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <div class="button">
-        <a class="waves-effect waves-white btn-large pulse indigo accent-1" v-on:click="newTab">
-          LEARN TO TORRENT
-        </a>
+      <div class="container">
+        <div class="speaker-box-left flex-center">
+          <div class="vent"></div>
+          <div class="speaker small flex-center circle1">
+            <div class="ring small flex-center">
+              <div class="interior small"></div>
+            </div>
+          </div>
+          <div class="speaker flex-center circle2">
+            <div class="ring flex-center">
+              <div class="interior"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="speaker-box-right flex-center">
+          <div class="vent"></div>
+          <div class="speaker small flex-center circle1">
+            <div class="ring small flex-center">
+              <div class="interior small"></div>
+            </div>
+          </div>
+          <div class="speaker flex-center circle2">
+            <div class="ring flex-center">
+              <div class="interior"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- <div class="circle circle1"></div> -->
 </template>
 
 <style>
+.card .card-content {
+  padding-bottom: 400px;
+}
+.row {
+  margin-top: 50px;
+  margin-left: 400px;
+}
 .button {
   position: absolute;
   /*padding-top: 70%;*/
   margin-bottom: 70%;
   top: 65%;
   left: 40%;
-}
-.video {
-  max-width: /*853px*/ 60%;
-  max-height: /*480px*/ 60%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 100;
-  left: 0;
-  margin: auto;
 }
 
 * {
@@ -109,8 +112,7 @@
   position: absolute;
   flex-direction: column;
   margin-top: 75px;
-  margin-left: 0.5%;
-  margin-right: 5%;
+  right: 1050px;
   margin-bottom: 50px;
   width: 200px;
   padding: 0% 0 60px 0;
@@ -122,6 +124,7 @@
 .speaker-box-right {
   position: absolute;
   flex-direction: column;
+  right: 30px;
   margin-top: 75px;
   margin-left: 84%;
   margin-bottom: 50px;

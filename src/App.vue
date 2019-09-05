@@ -22,6 +22,34 @@
       </div>
     </nav>
     <router-view v-on:changeJwt="setJwt()" />
+
+    <footer v-if="$route.name !== 'Player'" class="page-footer indigo accent-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Thank you for choosing Valefor.</h5>
+            <p class="grey-text text-lighten-4">
+              This is a student project built purely for academic purposes. Any assumption stating otherwise is
+              decidedly false.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Menu</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="home">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="upbeats" v-if="jwt">Upload</a></li>
+              <li><a class="grey-text text-lighten-3" href="the_crate" v-if="jwt">THE CRATE</a></li>
+              <li><a class="grey-text text-lighten-3" href="player" v-if="jwt">Player</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2019 Tiffany Tychewicz
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -44,6 +72,10 @@ export default {
 </script>
 
 <style>
+.the_crate {
+  padding-bottom: 40px;
+}
+
 #app {
   font-family: "Red Hat Text", sans-serif;
   -webkit-font-smoothing: antialiased;
