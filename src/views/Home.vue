@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <div class="header_img">
+      <img src="https://i.imgur.com/a4EEsQD.jpg" />
+    </div>
     <div class="row">
       <div class="col s12 m3">
         <div class="card medium">

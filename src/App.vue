@@ -13,11 +13,11 @@
         <ul id="nav-mobile" class="left hide-on-med-and-down">
           <li><a href="/home">Home</a></li>
           <li><a href="/login" v-if="!jwt">Login</a></li>
-          <li><a href="/logout" v-if="jwt">Logout</a></li>
           <li><a href="/signup" v-if="!jwt">Signup</a></li>
           <li><a href="/upbeats" v-if="jwt">Uploads</a></li>
           <li><a href="/the_crate" v-if="jwt">THE CRATE</a></li>
           <li><a href="/player" v-if="jwt">Player</a></li>
+          <li><a href="/logout" v-if="jwt">Logout</a></li>
         </ul>
       </div>
     </nav>

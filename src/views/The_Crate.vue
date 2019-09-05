@@ -3,7 +3,7 @@
     <div class="header_img">
       <img src="https://i.imgur.com/nHur9h9.jpg" />
     </div>
-    <h1>Search</h1>
+    <h1 class="search">Search</h1>
     <div class="upload-button">
       <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
         <i class="material-icons right">speaker</i>
@@ -28,10 +28,24 @@
 </template>
 
 <style>
+@keyframes header {
+  0% {
+    left: -1600px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.header_img {
+  position: relative;
+  animation-name: header;
+  animation-duration: 1s;
+}
 h3 {
   color: #ffffff;
 }
-h1 {
+.search {
   position: relative;
   right: 500px;
   top: 130px;

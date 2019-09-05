@@ -1,6 +1,9 @@
 <template>
   <div class="uploads">
-    
+    <div class="header_img">
+      <img src="https://i.imgur.com/crW7xvi.jpg" />
+    </div>
+      <h1 class="search">Search</h1>
       <div class="upload-button">
         <a class="waves-effect waves-red btn-large indigo accent-1 pulse" v-on:click="showFilePicker()">
           <i class="material-icons right">speaker</i>
@@ -86,6 +89,12 @@ export default {
 </script>
 
 <style>
+.search {
+  position: relative;
+  right: 500px;
+  top: 130px;
+  color: #ffffff;
+}
 .uploads {
   padding-bottom: 100px;
 }
